@@ -7,6 +7,7 @@ public class UtenteBean {
 	private String nome;
 	private String cognome;
 	private int id;
+	private int eta;
 	// Embedded specifica un attributo persistente il cui valore è istanza di una classa @Embeddable
 //	@Embedded 
 	private IndirizzoUtenteBean indirizzo;
@@ -15,12 +16,13 @@ public class UtenteBean {
 	public UtenteBean() {
 	}
 
-	public UtenteBean(String nome, String cognome, int id, IndirizzoUtenteBean indirizzo) {
+	public UtenteBean(String nome, String cognome, int id, IndirizzoUtenteBean indirizzo, int eta) {
 		super();
 		this.nome = nome;
 		this.cognome = cognome;
 		this.id = id;
 		this.indirizzo = indirizzo;
+		this.eta=eta;
 	}
 
 	public String getNome() {
@@ -55,9 +57,19 @@ public class UtenteBean {
 		this.indirizzo = indirizzo;
 	}
 
+	public int getEta() {
+		return eta;
+	}
+
+	public void setEta(int eta) {
+		this.eta = eta;
+	}
+
 	@Override
 	public String toString() {
-		return "UtenteBean [nome = " + nome + ", cognome = " + cognome + ", id = " + id + ", indirizzo = " + indirizzo + "]";
+		return "UtenteBean [nome=" + nome + ", cognome=" + cognome + ", id=" + id + ", eta=" + eta + ", indirizzo="
+				+ indirizzo + "]";
 	}
+
 
 }
