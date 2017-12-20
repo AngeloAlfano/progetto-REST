@@ -71,9 +71,4 @@ public class UtenteBean {
 				+ indirizzo + "]";
 	}
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> features
 }
