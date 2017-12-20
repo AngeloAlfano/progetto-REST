@@ -72,4 +72,8 @@ public class UtenteBean {
 	}
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> features
 }
