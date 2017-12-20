@@ -1,1 +1,1 @@
-Prova: aggiungo un file .txt al repository remoto
+Prova: aggiungo un file .txt al repository remoto e successivamente faccio la push sul repository locale
