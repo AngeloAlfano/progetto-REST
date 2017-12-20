@@ -9,21 +9,28 @@ public class UtenteBean {
 	private int id;
 	private int altezza;
 	private int peso;
-	// Embedded specifica un attributo persistente il cui valore è istanza di una classa @Embeddable
-//	@Embedded 
+	private int eta;
+
+	// Embedded specifica un attributo persistente il cui valore è istanza di
+	// una classa @Embeddable
+	// @Embedded
 	private IndirizzoUtenteBean indirizzo;
 
-	//Metodo costruttore di base
+	// Metodo costruttore di base
 	public UtenteBean() {
 	}
 
-	public UtenteBean(String nome, String cognome, int id, IndirizzoUtenteBean indirizzo, int peso, int altezza) {
+	public UtenteBean(String nome, String cognome, int id, IndirizzoUtenteBean indirizzo, int peso, int altezza,
+			int eta) {
+
 		super();
 		this.nome = nome;
 		this.cognome = cognome;
 		this.id = id;
 		this.indirizzo = indirizzo;
-		this.peso=peso;
+		this.peso = peso;
+		this.altezza = altezza;
+		this.eta = eta;
 	}
 
 	public String getNome() {
@@ -66,6 +73,15 @@ public class UtenteBean {
 		this.peso = peso;
 	}
 
+	public int getEta() {
+		return eta;
+	}
+
+	public void setEta(int peso) {
+		this.eta = eta;
+
+	}
+
 	public int getAltezza() {
 		return altezza;
 	}
@@ -77,7 +93,7 @@ public class UtenteBean {
 	@Override
 	public String toString() {
 		return "UtenteBean [nome=" + nome + ", cognome=" + cognome + ", id=" + id + ", altezza=" + altezza + ", peso="
-				+ peso + ", indirizzo=" + indirizzo + "]";
+				+ peso + ", eta=" + eta + ", indirizzo=" + indirizzo + "]";
 	}
 
 }
