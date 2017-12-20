@@ -67,9 +67,8 @@ public class UtenteBean {
 
 	@Override
 	public String toString() {
-		return "UtenteBean [nome=" + nome + ", cognome=" + cognome + ", id=" + id + ", indirizzo="
+		return "UtenteBean [nome=" + nome + ", cognome=" + cognome + ", id=" + id + ", peso=" + peso + ", indirizzo="
 				+ indirizzo + "]";
 	}
-
 
 }
